@@ -8,22 +8,22 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
+        path: 'parada',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+              import('../parada/parada.module').then(m => m.ParadaPageModule)
           }
         ]
       },
       {
-        path: 'tab2',
+        path: 'mapa',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+              import('../mapa/mapa.module').then(m => m.MapaPageModule)
           }
         ]
       },
@@ -39,14 +39,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/parada',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/parada',
     pathMatch: 'full'
   }
 ];

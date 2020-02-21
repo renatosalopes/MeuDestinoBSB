@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Paradas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-card *ngFor="let parada of paradas">
+      <ion-item>
+        <ion-label>{{ parada.properties.descricao }}</ion-label>
+      </ion-item>
+      <ion-card-content>
+        {{ parada.properties.linhas }}
+      </ion-card-content>
+    </ion-card>
+
+  </ion-list>
+</ion-content>
