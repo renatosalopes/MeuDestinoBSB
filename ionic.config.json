@@ -1,5 +1,8 @@
 {
   "name": "MeuDestinoBSB",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }
